@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import OldDashboard from './assets/Old_WAHINV_Dashboard.png'
-import NewDashboard from './assets/New_WAHINV_Dashboard.png'
-import SkillPill from './components/SkillPill'
+import { Link } from 'react-router-dom'
+import OldDashboard from '../assets/Old_WAHINV_Dashboard.png'
+import NewDashboard from '../assets/New_WAHINV_Dashboard.png'
+import SkillPill from '../components/SkillPill'
 
 function WAHInv() {
   const [compare, setCompare] = useState(50)
@@ -73,8 +74,6 @@ function WAHInv() {
                 hardware or mobile devices, completely automating data entry, reducing human error, and making daily inventory 
                 management smooth sailing.
             </p>
-            <br></br>
-            <p>You can visit the site here: <a href="https://wahinv.wah.ph" target="_blank" rel="noopener noreferrer">WAH Inventory System</a></p>
         </div>
 
         <div>
@@ -95,9 +94,9 @@ function WAHInv() {
         </div>
 
         <div className="wahinv-actions">
-          <a className="primary-action" href="/">
+          <Link className="primary-action" to="/">
             Back to portfolio
-          </a>
+          </Link>
         </div>
       </section>
     </main>
